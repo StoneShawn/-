@@ -1,0 +1,184 @@
+
+/* Banner PC */
+.faq__banner{
+    position: relative;
+
+    &--text{
+        align-items: flex-end;
+        h2{
+            position: absolute;
+            bottom: 16px;      
+            display: flex;
+            align-items: center;
+        
+        img{
+            margin-left: 16px;
+        }
+      } 
+    }
+
+    &--pad{
+        display: none;
+    }
+  
+}
+/* Banner 平板 */
+@media (max-width:768px){
+
+    .faq__banner{
+        &--pc{
+            display: none;
+        }
+        &--pad{
+            display: flex;
+            align-items: center;
+        }
+
+        &--text{
+            h2 img{
+                width: 48px;
+                background: #fff;
+                border-radius: 50%;
+            }
+        }
+     
+
+    }
+ 
+}
+
+/* Banner 手機 */
+@media (max-width:375px){
+    .faq__banner{
+
+        &--text{
+            h2{
+                font-size: 28px;
+            }
+            img{
+                width: 24px;
+                margin-left: 8px;
+            }
+        }
+     
+    }
+}
+
+
+/* 下拉選單 PC */
+
+.faq__sec{
+    padding-top: 88px;
+    padding-bottom: 156px;
+    h3{
+        font-size: 32px;
+        line-height: 63px;
+        font-weight: bold;
+        margin-bottom: 16px;
+    }
+
+    
+}
+
+.faq__sec__list{
+
+    .active .down{
+        display: none;
+    }
+
+
+    &__item{
+        border: 1px solid #000;
+
+      
+        
+        &:not(.active) .up{
+            display: none;
+        }
+
+        &__header{
+            padding: 22px 38px;
+            border-bottom:1px solid #000;
+            a {
+              text-decoration: none;
+              color: #000;
+              display: flex; 
+              justify-content: space-between;
+              align-items: center;
+             }
+             
+            h4{
+              font-size: 20px;
+              line-height: 23px;
+              font-weight: bold;
+            } 
+
+            
+
+        }
+
+
+        &__body{
+            background-color: #F2F2F2;
+            padding: 22px 38px;
+            padding-right: 246px;
+            font-size: 16px;
+            line-height: 24px;
+          }
+    }
+}
+
+/* 下拉選單 平板 */
+
+@media (max-width:768px){
+    .faq__sec{
+        padding-top: 40px;
+        padding-bottom: 104px;
+        h3{
+            font-size: 28px;
+            line-height: 63px;
+            margin-bottom: 32px;
+        }
+    }
+
+    .faq__sec__list__item{
+        &__header{
+            padding: 16px 24px;
+            h4{
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+
+        &__body{
+            font-size: 14px;
+            line-height: 21px;
+            padding: 16px 24px;
+        }
+    }
+}
+
+
+/* 下拉選單 平板 */
+
+@media (max-width:375px){
+    .faq__sec{
+        padding-top: 24px;
+        padding-bottom: 56px;
+        h3{
+            font-size: 20px;
+            line-height: 28px;    
+            margin-bottom: 16px;
+        }
+    }
+
+    .faq__sec__list__item{
+        &__header{
+            padding: 16px 8px;
+        }
+
+        &__body{
+            padding: 16px 8px;
+        }
+    }
+}
