@@ -742,4 +742,109 @@ h2 {
     margin-bottom: 27px;
     font-size: 14px; } }
 
+/* Banner PC */
+.faq__banner {
+  position: relative; }
+  .faq__banner--text {
+    align-items: flex-end; }
+    .faq__banner--text h2 {
+      position: absolute;
+      bottom: 16px;
+      display: flex;
+      align-items: center; }
+      .faq__banner--text h2 img {
+        margin-left: 16px; }
+  .faq__banner--pad {
+    display: none; }
+
+/* Banner 平板 */
+@media (max-width: 768px) {
+  .faq__banner--pc {
+    display: none; }
+  .faq__banner--pad {
+    display: flex;
+    align-items: center; }
+  .faq__banner--text h2 img {
+    width: 48px;
+    background: #fff;
+    border-radius: 50%; } }
+
+/* Banner 手機 */
+@media (max-width: 375px) {
+  .faq__banner--text h2 {
+    font-size: 28px; }
+  .faq__banner--text img {
+    width: 24px;
+    margin-left: 8px; } }
+
+/* 下拉選單 PC */
+.faq__sec {
+  padding-top: 88px;
+  padding-bottom: 156px; }
+  .faq__sec h3 {
+    font-size: 32px;
+    line-height: 63px;
+    font-weight: bold;
+    margin-bottom: 16px; }
+
+.faq__sec__list .active .down {
+  display: none; }
+
+.faq__sec__list__item {
+  border: 1px solid #000; }
+  .faq__sec__list__item:not(.active) .up {
+    display: none; }
+  .faq__sec__list__item__header {
+    padding: 22px 38px;
+    border-bottom: 1px solid #000; }
+    .faq__sec__list__item__header a {
+      text-decoration: none;
+      color: #000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+    .faq__sec__list__item__header h4 {
+      font-size: 20px;
+      line-height: 23px;
+      font-weight: bold; }
+  .faq__sec__list__item__body {
+    background-color: #F2F2F2;
+    padding: 22px 38px;
+    padding-right: 246px;
+    font-size: 16px;
+    line-height: 24px; }
+
+/* 下拉選單 平板 */
+@media (max-width: 768px) {
+  .faq__sec {
+    padding-top: 40px;
+    padding-bottom: 104px; }
+    .faq__sec h3 {
+      font-size: 28px;
+      line-height: 63px;
+      margin-bottom: 32px; }
+  .faq__sec__list__item__header {
+    padding: 16px 24px; }
+    .faq__sec__list__item__header h4 {
+      font-size: 16px;
+      line-height: 24px; }
+  .faq__sec__list__item__body {
+    font-size: 14px;
+    line-height: 21px;
+    padding: 16px 24px; } }
+
+/* 下拉選單 平板 */
+@media (max-width: 375px) {
+  .faq__sec {
+    padding-top: 24px;
+    padding-bottom: 56px; }
+    .faq__sec h3 {
+      font-size: 20px;
+      line-height: 28px;
+      margin-bottom: 16px; }
+  .faq__sec__list__item__header {
+    padding: 16px 8px; }
+  .faq__sec__list__item__body {
+    padding: 16px 8px; } }
+
 /*# sourceMappingURL=all.css.map */
